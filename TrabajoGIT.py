@@ -6,10 +6,12 @@ Created on Mon Oct 25 11:02:38 2021
 """
 
 opc=0
-while(opc!=1):  # con este while controlamos que el programa se ejecute hasta que metamos "Salir -> 8"
+while(opc!=3):  # con este while controlamos que el programa se ejecute hasta que metamos "Salir -> 8"
     print("1.-Suma")
+    print("2.-Resta")
+    print("3.-Salir")
     opc = int(input("Intro opc válida:"))
-    while(opc<1 or opc>1):  # con este while controlamos que la opción esté en el rango correcto
+    while(opc<1 or opc>3):  # con este while controlamos que la opción esté en el rango correcto
         opc = int(input("Intro opc válida:"))
     
 
@@ -17,6 +19,11 @@ while(opc!=1):  # con este while controlamos que el programa se ejecute hasta qu
         x=int(input("Introduzca el primer número: "))
         y=int(input("Introduzca el segundo número: "))
         print(f"{x}+{y}={x+y}")
+        
+    elif(opc==2):
+        x=int(input("Introduzca el primer número: "))
+        y=int(input("Introduzca el segundo número: "))
+        print(f"{x}-{y}={x-y}")
     else:
         print("ERROR")
                 
