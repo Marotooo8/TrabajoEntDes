@@ -12,7 +12,7 @@ while(opc!=8):  # con este while controlamos que el programa se ejecute hasta qu
     print("3.-Multiplicación")
     print("4.-División")
     print("5.-Cociente")
-    print("6.-Resto")
+    print("6.-Resto 2")
     print("7.-Exponencia de dos números")
     print("8.-Salir")
     opc = int(input("Intro opc válida:"))
